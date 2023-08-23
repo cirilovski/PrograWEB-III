@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Feedback</title>
+    <style>
+        body {
+            background-color: rgb(196, 217, 255);
+        }
+
+        form {
+            text-align: center;
+        }
+        div{
+            background-color: bisque;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-right: 600px;
+            margin-left: 600px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>Formulário de Feedback</center>
+    </h1>
+
+    <div>
+        <form>
+            <label for="Nome"> Nome: </label><input type="text" name="Nome">
+            <br>
+            <br>
+            <label for="Senha"> Senha: </label><input type="password" name="Senha">
+            <br>
+            <br>
+            <label for="Idade"> Idade: </label><input type="number" name="Idade" step="1">
+            <br>
+            <br>
+            <label for="Pergunta"> Você já conhecia essas inovações? </label><input type="radio" name="Pergunta">
+            <br>
+
+            <h3>Quais já conhecia?</h3>
+            <label for="IA"> IA em Humanoides </label><input type="checkbox" value="IA">
+            <br>
+            <label for="Carro"> Carros Voadores </label><input type="checkbox" value="Carro">
+            <br>
+            <label for="Sabre"> Sabre de Luz </label><input type="checkbox" value="Sabre">
+            <br>
+            <h3>Escolha seu país</h3>
+            <select name="Pais" id="Pais">
+                <option value="Brasil"> Brasil</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Venezuela">Venezuela</option>
+            <br>
+            </select>
+            <br>
+            <h3>Comentários</h3>
+            <textarea name="Comentario" id="Comentario" cols="30" rows="5"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
